@@ -1,12 +1,13 @@
 export const site = {
   brand: {
     name: "Kiran Enterprise",
-    tagline: "Laptop and hardware buyback, and end-to-end e-waste disposal, in Bengaluru",
+    tagline:
+      "Laptop and hardware buyback, and end-to-end e-waste disposal, in Bengaluru",
   },
   contact: {
-    phone: "+91 98765 43210",
-    phoneHref: "tel:+919876543210",
-    whatsappNumber: "919876543210",
+    phone: "+91 96207 77644",
+    phoneHref: "tel:+919620777644",
+    whatsappNumber: "919620777644",
     email: "hello@kiranenterprise.in",
     address: "Bannerghatta Road, Bengaluru, Karnataka 560076",
     hours: "Monday to Saturday, 9:30 am to 7:00 pm",
@@ -182,7 +183,13 @@ export const site = {
   ewasteGroups: [
     {
       title: "Computers",
-      items: ["Desktops", "Servers", "Laptops past repair", "Hard drives", "RAM and boards"],
+      items: [
+        "Desktops",
+        "Servers",
+        "Laptops past repair",
+        "Hard drives",
+        "RAM and boards",
+      ],
     },
     {
       title: "Screens and print",
@@ -190,11 +197,23 @@ export const site = {
     },
     {
       title: "Power and network",
-      items: ["UPS units", "Batteries", "Chargers", "Routers and switches", "Cables"],
+      items: [
+        "UPS units",
+        "Batteries",
+        "Chargers",
+        "Routers and switches",
+        "Cables",
+      ],
     },
     {
       title: "Small devices",
-      items: ["Phones", "Tablets", "Keyboards and mice", "Speakers", "Set-top boxes"],
+      items: [
+        "Phones",
+        "Tablets",
+        "Keyboards and mice",
+        "Speakers",
+        "Set-top boxes",
+      ],
     },
   ],
   ewasteAudience: [
@@ -235,7 +254,12 @@ export const site = {
       body: "Items are weighed and loaded. Businesses receive an itemised disposal certificate.",
     },
   ],
-  ewasteQuantities: ["1 to 5 items", "6 to 20 items", "21 to 100 items", "Over 100 items"],
+  ewasteQuantities: [
+    "1 to 5 items",
+    "6 to 20 items",
+    "21 to 100 items",
+    "Over 100 items",
+  ],
   trust: [
     {
       title: "The quote is the price",
