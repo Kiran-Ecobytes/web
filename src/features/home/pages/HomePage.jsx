@@ -31,7 +31,7 @@ const SERVICES_SCHEMA = {
       name: "Laptop and computer hardware buyback",
       serviceType: "Used electronics purchase",
       areaServed: "Bengaluru",
-      provider: { "@type": "LocalBusiness", name: "Kiran Enterprise" },
+      provider: { "@type": "LocalBusiness", name: "Kiran Ecobytes" },
       url: `${SITE_URL}/sell`,
       description:
         "We buy used laptops, desktops, workstations, mini PCs, RAM, SSDs, hard drives, servers and parts from individuals and businesses.",
@@ -42,7 +42,7 @@ const SERVICES_SCHEMA = {
       name: "End-to-end e-waste disposal",
       serviceType: "Electronic waste collection and recycling",
       areaServed: "Bengaluru",
-      provider: { "@type": "LocalBusiness", name: "Kiran Enterprise" },
+      provider: { "@type": "LocalBusiness", name: "Kiran Ecobytes" },
       url: `${SITE_URL}/e-waste`,
       description:
         "Assessment, doorstep collection, data destruction, recycling through authorised partners and a disposal certificate.",

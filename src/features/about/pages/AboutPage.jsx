@@ -17,7 +17,7 @@ function AboutPage() {
     <>
       <PageIntro
         title="One business, two ways to deal with old electronics"
-        lede="Kiran Enterprise started as a laptop buyback counter in Bengaluru. The laptops kept coming, and with them everything else people wanted gone. We built the second half of the business around that."
+        lede="Kiran Ecobytes started as a laptop buyback counter in Bengaluru. The laptops kept coming, and with them everything else people wanted gone. We built the second half of the business around that."
       />
 
       <section className="section-shell pb-12">

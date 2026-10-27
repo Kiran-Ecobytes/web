@@ -41,7 +41,7 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-40 border-b border-line bg-paper/90 backdrop-blur-md">
       <div className="section-shell flex h-16 items-center justify-between gap-4">
-        <Link to="/" aria-label="Kiran Enterprise home">
+        <Link to="/" aria-label="Kiran Ecobytes home">
           <Logo />
         </Link>
 

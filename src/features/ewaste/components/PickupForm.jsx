@@ -25,7 +25,7 @@ export function PickupForm() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const message = composeMessage("Hi Kiran Enterprise, I'd like to book an e-waste pickup.", [
+    const message = composeMessage("Hi Kiran Ecobytes, I'd like to book an e-waste pickup.", [
       ["Type", form.who],
       ["Name or organisation", form.name],
       ["Phone", form.phone],

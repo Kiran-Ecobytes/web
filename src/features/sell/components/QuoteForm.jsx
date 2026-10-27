@@ -20,7 +20,7 @@ export function QuoteForm() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const message = composeMessage("Hi Kiran Enterprise, I'd like a price for some hardware.", [
+    const message = composeMessage("Hi Kiran Ecobytes, I'd like a price for some hardware.", [
       ["Selling", form.category],
       ["Brand", form.brand],
       ["Model or spec", form.model],

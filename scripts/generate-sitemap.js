@@ -30,7 +30,7 @@ const notFound = `<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Kiran Enterprise</title>
+    <title>Kiran Ecobytes</title>
     <script>
       sessionStorage.setItem(
         "redirectPath",

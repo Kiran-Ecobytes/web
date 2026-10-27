@@ -20,7 +20,7 @@ export function QuickRequest({ id = "request", title = "Send a request", lede })
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const text = composeMessage(`Hi Kiran Enterprise, I'd like to ${form.intent.toLowerCase()}.`, [
+    const text = composeMessage(`Hi Kiran Ecobytes, I'd like to ${form.intent.toLowerCase()}.`, [
       ["Name", form.name],
       ["Phone", form.phone],
       ["Details", form.message],

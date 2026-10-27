@@ -103,7 +103,7 @@ function ContactPage() {
       <section className="section-shell pb-16 sm:pb-20">
         <div className="overflow-hidden rounded-card border border-line bg-surface">
           <iframe
-            title="Kiran Enterprise on Google Maps"
+            title="Kiran Ecobytes on Google Maps"
             src={site.contact.mapsEmbedHref}
             className="h-80 w-full sm:h-96"
             loading="lazy"

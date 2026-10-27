@@ -12,5 +12,5 @@ export function composeMessage(intro, fields) {
 }
 
 export const GENERAL_WHATSAPP_URL = whatsappUrl(
-  "Hi Kiran Enterprise, I have something to sell or clear. Can you help?",
+  "Hi Kiran Ecobytes, I have something to sell or clear. Can you help?",
 );
