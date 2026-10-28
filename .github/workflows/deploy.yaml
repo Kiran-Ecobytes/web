@@ -36,8 +36,8 @@ jobs:
 
       - name: Build project
         env:
-          BASE_PATH: /web/
-          VITE_SITE_URL: https://kiran-ecobytes.github.io/web
+          BASE_PATH: /
+          VITE_SITE_URL: https://kiranecobytes.com
         run: npm run build
 
       - name: Upload build artifact
