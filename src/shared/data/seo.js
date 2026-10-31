@@ -31,6 +31,22 @@ export const ROUTES = [
     priority: "0.9",
   },
   {
+    path: "/data-destruction",
+    title: "Hard drive and SSD data destruction in Bengaluru | Kiran Ecobytes",
+    description:
+      "Hard drives, SSDs, laptops and servers wiped or physically destroyed before reuse or recycling. Wiped in front of you, with a serial-numbered record for every device for businesses. Free pickup across Bengaluru.",
+    changefreq: "monthly",
+    priority: "0.8",
+  },
+  {
+    path: "/office-it-clearance",
+    title: "Office IT clearance and corporate e-waste disposal in Bengaluru | Kiran Ecobytes",
+    description:
+      "Retired workstations, monitors, servers and cabling cleared from offices, startups, schools and housing societies in Bengaluru. Itemised inventory, data destruction, bulk collection and a disposal certificate.",
+    changefreq: "monthly",
+    priority: "0.8",
+  },
+  {
     path: "/about",
     title: "About Kiran Ecobytes | Laptop buyback and e-waste disposal, Bengaluru",
     description:

@@ -335,4 +335,124 @@ export const site = {
       a: "Yes. Every business pickup comes with an itemised disposal certificate for your records.",
     },
   ],
+  sellFaqs: [
+    {
+      q: "Do you buy laptops that don't turn on?",
+      a: "Yes. Dead laptops are valued for their parts and materials. The price is lower than a working one, but it is never zero.",
+    },
+    {
+      q: "Do you buy parts on their own, not just laptops?",
+      a: "Yes. RAM, SSDs, hard drives, mini PCs, workstations, servers, motherboards and graphics cards, from one piece to a storeroom full. Send a list and we quote for the lot.",
+    },
+    {
+      q: "Which laptop brands do you buy?",
+      a: "Apple, Dell, HP, Lenovo, Asus, Acer, MSI, Samsung, Microsoft and any other brand. Working, slow, damaged or not turning on.",
+    },
+    {
+      q: "How do you decide the price?",
+      a: "Brand, model, age, processor, RAM, storage, screen and battery condition, and whether the charger is included. Send the details and we reply with a number.",
+    },
+    {
+      q: "Will the price change when you arrive?",
+      a: "No. If the laptop matches what you told us, you get the number we sent. There is no renegotiating at your door.",
+    },
+    {
+      q: "How do I get paid?",
+      a: "UPI or cash at the time of pickup, after we have checked the laptop and wiped the drive.",
+    },
+    {
+      q: "What happens to the data on my laptop?",
+      a: "We erase every drive in front of you before we pay. Businesses get a serial-numbered wipe record for each device.",
+    },
+    {
+      q: "Can I drop the laptop off myself?",
+      a: "Yes. Walk-ins are welcome at 86, BTS Layout Main Road, Bannerghatta Road, Arekere, Monday to Saturday, 9:30 am to 7:00 pm. Bring the charger. We check it, wipe it and pay while you wait.",
+    },
+    {
+      q: "Is pickup really free?",
+      a: "Yes, anywhere in Bengaluru. Outside the city we confirm before scheduling.",
+    },
+  ],
+  ewasteFaqs: [
+    {
+      q: "What does end-to-end e-waste disposal include?",
+      a: "Assessment, collection from your premises, data destruction, sorting for reuse, recycling through authorised partners, and a disposal certificate at the end. You do not need to arrange anything else.",
+    },
+    {
+      q: "What e-waste do you accept?",
+      a: "Desktops, servers, laptops past repair, hard drives, RAM and boards, monitors, TVs, printers, scanners, projectors, UPS units, batteries, chargers, routers, switches, cables, phones, tablets, keyboards, mice, speakers and set-top boxes.",
+    },
+    {
+      q: "Do you charge for e-waste pickup?",
+      a: "Household pickups are free for most items. For bulk office clearances we quote on quantity, and many items earn you money rather than costing it.",
+    },
+    {
+      q: "What happens to the e-waste you collect?",
+      a: "Working parts are tested and reused. The rest is dismantled and handed to authorised recyclers who recover metals and dispose of the remainder safely. Nothing goes to landfill.",
+    },
+    {
+      q: "Can I get a certificate for my company?",
+      a: "Yes. Every business pickup comes with an itemised disposal certificate for your records.",
+    },
+    {
+      q: "Which areas do you collect from?",
+      a: "Anywhere in Bengaluru, including Arekere, Bannerghatta Road, BTM Layout, JP Nagar, Jayanagar, HSR Layout, Koramangala, Electronic City, Whitefield, Marathahalli, Indiranagar, Hebbal, Yelahanka and Rajajinagar.",
+    },
+    {
+      q: "How do I book a pickup?",
+      a: "Fill in the pickup form or send a list or photos on WhatsApp. We confirm a date, a time window and a quote for anything that earns you money.",
+    },
+  ],
+  dataDestructionFaqs: [
+    {
+      q: "Do you wipe my laptop before you pay for it?",
+      a: "Yes. We erase every drive in front of you, then pay. Nothing changes hands until the data is gone.",
+    },
+    {
+      q: "Can my company get a record of every drive?",
+      a: "Yes. Every storage device is wiped or physically destroyed, and businesses get a serial-numbered record for each device for their audit file.",
+    },
+    {
+      q: "Do you take hard drives and SSDs on their own?",
+      a: "Yes. Internal and external hard drives, and SATA, M.2 and NVMe SSDs, working or for scrap. Drives we buy are wiped before we pay.",
+    },
+    {
+      q: "What happens to drives that cannot be reused?",
+      a: "They are wiped or physically destroyed before recycling, then handed to authorised recyclers with the rest of the e-waste.",
+    },
+    {
+      q: "Can you collect drives and computers from our office?",
+      a: "Yes. Pickup is free anywhere in Bengaluru. Bulk pickups include an itemised inventory, and a spreadsheet of asset tags helps us prepare the paperwork.",
+    },
+    {
+      q: "When can I reach you?",
+      a: "Monday to Saturday, 9:30 am to 7:00 pm. WhatsApp is fastest and we usually reply within the hour during working hours.",
+    },
+  ],
+  clearanceFaqs: [
+    {
+      q: "Who do you clear IT equipment for?",
+      a: "Offices and startups, schools and colleges, apartments and housing societies, IT teams clearing a storeroom, and repair shops and dealers with surplus stock.",
+    },
+    {
+      q: "What do you need from us to start?",
+      a: "A rough count is enough. For offices, a spreadsheet of asset tags helps us prepare the paperwork.",
+    },
+    {
+      q: "Do we pay for an office clearance?",
+      a: "We quote on quantity, and many items earn you money rather than costing it. Working laptops, desktops and parts are bought through our buyback side.",
+    },
+    {
+      q: "Do we get paperwork for our books?",
+      a: "Yes. Bulk sellers get a single quote and an invoice, every drive gets a wipe record, and every business pickup ends with an itemised disposal certificate.",
+    },
+    {
+      q: "Can you collect on a regular schedule?",
+      a: "Yes. For companies with a steady stream of retired hardware we set a pickup schedule that fits yours, with paperwork every time.",
+    },
+    {
+      q: "How is the data on our machines handled?",
+      a: "Every storage device is wiped or physically destroyed before recycling, with a serial-numbered record for your audit file.",
+    },
+  ],
 };

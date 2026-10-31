@@ -18,8 +18,8 @@ const EMPTY = {
   date: "",
 };
 
-export function PickupForm() {
-  const [form, setForm] = useState(EMPTY);
+export function PickupForm({ defaultWho = WHO[0].value }) {
+  const [form, setForm] = useState({ ...EMPTY, who: defaultWho });
 
   const update = (key) => (event) => setForm((prev) => ({ ...prev, [key]: event.target.value }));
 

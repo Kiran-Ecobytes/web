@@ -12,7 +12,7 @@ const INTENTS = [
 
 const EMPTY = { intent: INTENTS[0].value, name: "", phone: "", message: "" };
 
-export function QuickRequest({ id = "request", title = "Send a request", lede }) {
+export function QuickRequest({ id = "request", title = "Send a request", lede, note }) {
   const [form, setForm] = useState(EMPTY);
   const intent = INTENTS.find((option) => option.value === form.intent);
 
@@ -20,7 +20,8 @@ export function QuickRequest({ id = "request", title = "Send a request", lede })
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const text = composeMessage(`Hi Kiran Ecobytes, I'd like to ${form.intent.toLowerCase()}.`, [
+    const intro = `Hi Kiran Ecobytes, I'd like to ${form.intent.toLowerCase()}.`;
+    const text = composeMessage(note ? `${intro} ${note}` : intro, [
       ["Name", form.name],
       ["Phone", form.phone],
       ["Details", form.message],

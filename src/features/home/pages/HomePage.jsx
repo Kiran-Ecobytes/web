@@ -1,6 +1,7 @@
-import { JsonLd, QuickRequest } from "@/shared/components";
+import { FaqSection, JsonLd, QuickRequest } from "@/shared/components";
 import { site } from "@/shared/data/site";
 import { SITE_URL } from "@/shared/config";
+import { BUSINESS_REF } from "@/shared/utils/schema";
 import { usePageMeta } from "@/shared/hooks";
 import { Hero } from "../components/Hero";
 import { HowItWorks } from "../components/HowItWorks";
@@ -8,18 +9,7 @@ import { WhatWeBuy } from "../components/WhatWeBuy";
 import { EwasteOverview } from "../components/EwasteOverview";
 import { Storeroom } from "../components/Storeroom";
 import { TrustPoints } from "../components/TrustPoints";
-import { Faq } from "../components/Faq";
 import { CtaBand } from "../components/CtaBand";
-
-const FAQ_SCHEMA = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: site.faqs.map((faq) => ({
-    "@type": "Question",
-    name: faq.q,
-    acceptedAnswer: { "@type": "Answer", text: faq.a },
-  })),
-};
 
 const SERVICES_SCHEMA = {
   "@context": "https://schema.org",
@@ -31,7 +21,7 @@ const SERVICES_SCHEMA = {
       name: "Laptop and computer hardware buyback",
       serviceType: "Used electronics purchase",
       areaServed: "Bengaluru",
-      provider: { "@type": "LocalBusiness", name: "Kiran Ecobytes" },
+      provider: BUSINESS_REF,
       url: `${SITE_URL}/sell`,
       description:
         "We buy used laptops, desktops, workstations, mini PCs, RAM, SSDs, hard drives, servers and parts from individuals and businesses.",
@@ -42,10 +32,32 @@ const SERVICES_SCHEMA = {
       name: "End-to-end e-waste disposal",
       serviceType: "Electronic waste collection and recycling",
       areaServed: "Bengaluru",
-      provider: { "@type": "LocalBusiness", name: "Kiran Ecobytes" },
+      provider: BUSINESS_REF,
       url: `${SITE_URL}/e-waste`,
       description:
         "Assessment, doorstep collection, data destruction, recycling through authorised partners and a disposal certificate.",
+    },
+    {
+      "@type": "Service",
+      position: 3,
+      name: "Hard drive and SSD data destruction",
+      serviceType: "Data destruction",
+      areaServed: "Bengaluru",
+      provider: BUSINESS_REF,
+      url: `${SITE_URL}/data-destruction`,
+      description:
+        "Hard drives, SSDs, laptops and servers wiped or physically destroyed, with a serial-numbered record for every device.",
+    },
+    {
+      "@type": "Service",
+      position: 4,
+      name: "Office IT clearance",
+      serviceType: "IT asset disposition",
+      areaServed: "Bengaluru",
+      provider: BUSINESS_REF,
+      url: `${SITE_URL}/office-it-clearance`,
+      description:
+        "Retired workstations, monitors, servers and cabling inventoried, collected in bulk and closed with a disposal certificate.",
     },
   ],
 };
@@ -76,9 +88,8 @@ function HomePage() {
           <QuickRequest />
         </div>
       </section>
-      <Faq />
+      <FaqSection items={site.faqs} />
       <CtaBand />
-      <JsonLd id="faq-jsonld" data={FAQ_SCHEMA} />
       <JsonLd id="services-jsonld" data={SERVICES_SCHEMA} />
     </>
   );

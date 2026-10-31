@@ -1,7 +1,10 @@
-import { PageIntro, Photo, SectionHeading } from "@/shared/components";
+import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
+import { FaqSection, JsonLd, PageIntro, Photo, SectionHeading, ServiceAreas } from "@/shared/components";
 import { site } from "@/shared/data/site";
 import { shopPhotos } from "@/shared/data/photos";
 import { usePageMeta } from "@/shared/hooks";
+import { breadcrumbSchema, serviceSchema } from "@/shared/utils/schema";
 import { CtaBand } from "@/features/home";
 import { PickupForm } from "../components/PickupForm";
 
@@ -11,6 +14,22 @@ const GALLERY = [
   { photo: shopPhotos.cabinetCables, alt: "A cabinet of tangled cables and peripherals awaiting disposal" },
 ];
 
+const SERVICE_LINKS = {
+  "Office and IT clearance": "/office-it-clearance",
+  "Data destruction": "/data-destruction",
+};
+
+const SCHEMAS = [
+  serviceSchema({
+    name: "End-to-end e-waste disposal",
+    serviceType: "Electronic waste collection and recycling",
+    path: "/e-waste",
+    description:
+      "Assessment, doorstep collection, data destruction, recycling through authorised partners and a disposal certificate for homes, offices and institutions.",
+  }),
+  breadcrumbSchema("E-waste pickup", "/e-waste"),
+];
+
 function EwastePage() {
   usePageMeta("/e-waste");
 
@@ -18,7 +37,7 @@ function EwastePage() {
     <>
       <PageIntro
         vertical="verdigris"
-        title="E-waste disposal from your door to the certificate, end to end"
+        title="E-waste disposal in Bengaluru, from your door to the certificate"
         lede="From a drawer of dead chargers to an office floor of retired workstations. We assess, collect, destroy data, sort for reuse, recycle through authorised partners and hand you the paperwork. There is nothing left for you to arrange."
       />
 
@@ -35,6 +54,15 @@ function EwastePage() {
                   <li key={service.title} className="py-4">
                     <h3 className="font-display text-base font-semibold text-ink">{service.title}</h3>
                     <p className="mt-1 text-[15px] leading-relaxed text-slate">{service.body}</p>
+                    {SERVICE_LINKS[service.title] && (
+                      <Link
+                        to={SERVICE_LINKS[service.title]}
+                        className="mt-2 inline-flex items-center gap-1.5 text-[15px] font-medium text-verdigris-700 hover:text-verdigris-600"
+                      >
+                        More on {service.title.toLowerCase()}
+                        <ArrowRight size={15} aria-hidden="true" />
+                      </Link>
+                    )}
                   </li>
                 ))}
               </ul>
@@ -85,7 +113,12 @@ function EwastePage() {
         </ol>
       </section>
 
+      <ServiceAreas vertical="verdigris" />
+      <FaqSection items={site.ewasteFaqs} title="E-waste pickup: common questions" vertical="verdigris" className="pt-0 sm:pt-0" />
       <CtaBand />
+      {SCHEMAS.map((schema) => (
+        <JsonLd key={schema["@type"]} data={schema} />
+      ))}
     </>
   );
 }

@@ -11,3 +11,5 @@ export { Reveal } from "./Reveal";
 export { Photo } from "./Photo";
 export { JsonLd } from "./JsonLd";
 export { WhatsAppIcon } from "./WhatsAppIcon";
+export { FaqSection } from "./FaqSection";
+export { ServiceAreas } from "./ServiceAreas";

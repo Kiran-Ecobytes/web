@@ -12,12 +12,19 @@ const PAGES = [
   { label: "Contact", to: "/contact" },
 ];
 
+const SERVICES = [
+  { label: "Laptop and hardware buyback", to: "/sell" },
+  { label: "E-waste disposal", to: "/e-waste" },
+  { label: "Data destruction", to: "/data-destruction" },
+  { label: "Office IT clearance", to: "/office-it-clearance" },
+];
+
 export function Footer() {
   const year = new Date().getFullYear();
 
   return (
     <footer className="border-t border-line bg-surface">
-      <div className="section-shell grid gap-10 py-14 md:grid-cols-[1.4fr_1fr_1.2fr]">
+      <div className="section-shell grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
         <div>
           <Logo />
           <p className="mt-4 max-w-sm text-[15px] leading-relaxed text-slate">
@@ -27,7 +34,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h3 className="font-display text-base font-semibold text-ink">Pages</h3>
+          <h2 className="font-display text-base font-semibold text-ink">Pages</h2>
           <ul className="mt-4 space-y-2.5">
             {PAGES.map((page) => (
               <li key={page.to}>
@@ -40,7 +47,20 @@ export function Footer() {
         </div>
 
         <div>
-          <h3 className="font-display text-base font-semibold text-ink">Reach us</h3>
+          <h2 className="font-display text-base font-semibold text-ink">Services</h2>
+          <ul className="mt-4 space-y-2.5">
+            {SERVICES.map((service) => (
+              <li key={service.to}>
+                <Link to={service.to} className="text-[15px] text-slate hover:text-ink">
+                  {service.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h2 className="font-display text-base font-semibold text-ink">Reach us</h2>
           <ul className="mt-4 space-y-2.5 text-[15px] text-slate">
             <li>
               <a href={site.contact.phoneHref} className="hover:text-ink">
