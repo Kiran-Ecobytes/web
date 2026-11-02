@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { site } from "@/shared/data/site";
 import { photoCredits } from "@/shared/data/photos";
+import { LinkedInIcon } from "./LinkedInIcon";
 import { Logo } from "./Logo";
 
 const PAGES = [
@@ -70,6 +71,17 @@ export function Footer() {
             <li>
               <a href={`mailto:${site.contact.email}`} className="hover:text-ink">
                 {site.contact.email}
+              </a>
+            </li>
+            <li>
+              <a
+                href={site.contact.linkedinHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 hover:text-ink"
+              >
+                <LinkedInIcon size={16} />
+                LinkedIn
               </a>
             </li>
             <li>{site.contact.address}</li>

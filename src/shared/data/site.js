@@ -9,6 +9,7 @@ export const site = {
     phoneHref: "tel:+919620777644",
     whatsappNumber: "919620777644",
     email: "kiranecobytes@gmail.com",
+    linkedinHref: "https://www.linkedin.com/company/144058428/",
     address:
       "86, BTS layout main road, Bannerghatta Rd, Arekere, Bengaluru, Karnataka 560076",
     hours: "Monday to Saturday, 9:30 am to 7:00 pm",

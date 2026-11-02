@@ -1,5 +1,5 @@
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
-import { Button, PageIntro, QuickRequest, WhatsAppIcon } from "@/shared/components";
+import { Button, LinkedInIcon, PageIntro, QuickRequest, WhatsAppIcon } from "@/shared/components";
 import { site } from "@/shared/data/site";
 import { usePageMeta } from "@/shared/hooks";
 import { GENERAL_WHATSAPP_URL } from "@/shared/utils/whatsapp";
@@ -23,6 +23,13 @@ const CHANNELS = [
     title: "Email",
     body: site.contact.email,
     href: `mailto:${site.contact.email}`,
+  },
+  {
+    icon: LinkedInIcon,
+    title: "LinkedIn",
+    body: "Follow Kiran Ecobytes for updates",
+    href: site.contact.linkedinHref,
+    external: true,
   },
   {
     icon: Clock,
